@@ -3,6 +3,11 @@ using System.Net;
 
 namespace BetterDecorador
 {
+    /// <summary>
+    /// Receives string from command line that is altered by the method Decor, 
+    // so around that string the inputted character is multiplied by the int 
+    // number
+    /// </summary>
     public class Program
     {
         /// <summary>
