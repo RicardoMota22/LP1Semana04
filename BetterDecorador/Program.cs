@@ -52,9 +52,20 @@ namespace BetterDecorador
             }
             else
             {
-               Console.WriteLine(Decor(args[0],char.Parse(args[1]), 
-            int.Parse(args[2]))); 
+                Console.WriteLine(Decor(args[0],char.Parse(args[1]), 
+                int.Parse(args[2]))); 
             }
         }
+
+        private static string Decor()
+        {
+            string input = "User did not specify args!";
+            char imp = 'n';
+            int nnum = 3;
+
+            string response = Decor(input, imp, nnum);
+            return response;
+        }
+
     }
 }
