@@ -48,7 +48,7 @@ namespace BetterDecorador
             */
             if(args.Length == 0)
             {
-                Console.WriteLine("Specify Args");
+                Console.WriteLine(Decor());
             }
             else
             {
@@ -57,10 +57,15 @@ namespace BetterDecorador
             }
         }
 
+        /// <summary>
+        /// If User did not input anything in the command line this method is
+        /// called on by the Main
+        /// </summary>
+        /// <returns>string with characters and specific amount</returns>
         private static string Decor()
         {
             string input = "User did not specify args!";
-            char imp = 'n';
+            char imp = '=';
             int nnum = 3;
 
             string response = Decor(input, imp, nnum);
