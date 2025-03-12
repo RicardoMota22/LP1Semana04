@@ -5,7 +5,16 @@ namespace BetterDecorador
 {
     public class Program
     {
-        private static string Decor(string s , char dec, int num)
+        /// <summary>
+        /// Receives string and the inputted character surrounds set string
+        /// that inputted character is repeated by the whole(int) number inserted
+        /// </summary>
+        /// <param name="s">string</param>
+        /// <param name="dec">character that surrounds string </param>
+        /// <param name="count"> the number that determines the amount of
+        // times the character appears</param>
+        /// <returns> string with characters </returns>
+        private static string Decor(string s , char dec, int count)
         {
             /*
             string border = new string(dec,num);
@@ -14,7 +23,7 @@ namespace BetterDecorador
 
             int n = 0;
             s = " " + s + " ";
-            while(n != num)
+            while(n != count)
             {
                 s = dec + s + dec;
                 ++n;
@@ -22,6 +31,10 @@ namespace BetterDecorador
             return s;
 
         }
+        /// <summary>
+        /// Parses string from Method Decor that is received from the command line
+        /// </summary>
+        /// <param name="args"> arguments from command line</param>
         private static void Main(string[] args)
         {
             /*
